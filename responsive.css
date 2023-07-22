@@ -1,0 +1,49 @@
+@media (max-width: 480px) {
+    .seventhListing {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    .saree-nav {
+        display: none;
+    }
+    .second-list .listing .item {
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+    .third-list {
+        width: 100%;
+        display: block;
+    }
+    .third-list .third-list-item {
+        width: 90%;
+    }
+    .fourth-list {
+        width: 90%;
+    }
+    .fourth-list .fourth-left {
+        margin-top: 90px;
+        margin-left: 5px;
+    }
+    .fourth-list .fourth-right {
+        margin-left: 84%;
+        margin-top: -84px;
+    }
+    .discover {
+        width: 59%;
+    }
+    .loomimage img {
+        height: 100%;
+    }
+    .sixthListing {
+        margin: 0;
+        display: block;
+    }
+    .sixthListing .sixthItem {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+}
