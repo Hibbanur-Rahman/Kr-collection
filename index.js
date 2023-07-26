@@ -159,13 +159,13 @@ SecItem.forEach((element) => {
     element.addEventListener('mouseover', () => {
         var x = (element.childNodes[1].src);
         var index=x.indexOf('.webp');
-        var y = x.substring(0, index) + 'b' + x.substring(index+1,);
+        var y = x.substring(0, index-1) + 'b' + x.substring(index,);
         element.childNodes[1].src = y;
     })
     element.addEventListener('mouseleave', () => {
         var x = (element.childNodes[1].src);
          var index=x.indexOf('.webp');
-        var y = x.substring(0, index) + 'a' + x.substring(index+1,);
+        var y = x.substring(0, index-1) + 'a' + x.substring(index,);
         element.childNodes[1].src = y;
     })
 })
