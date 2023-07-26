@@ -43,13 +43,26 @@
         padding-top: 80px;
         margin: auto;
     }
+    .second-list p{
+        font-size: 19px;
+    }
+    .second-list .heading{
+        display: block;
+        width: 100%;
+    }
+    .second-list .heading h1{
+        font-size: 36px;
+    }
+    .second-list .heading p{
+        font-size: 18px;
+    }
     .second-list .left {
-        margin-top: 80px;
+        margin-top: 123px;
         margin-left: -25px;
     }
     .second-list .right {
         margin-left: 80%;
-        margin-top: -70px;
+        margin-top: -115px;
     }
     .second-list .listing {
         width: 200%;
@@ -81,12 +94,12 @@
         width: 90%;
     }
     .fourth-list .fourth-left {
-        margin-top: 90px;
+        margin-top: 150px;
         margin-left: 5px;
     }
     .fourth-list .fourth-right {
         margin-left: 84%;
-        margin-top: -84px;
+        margin-top: -130px;
     }
     .discover {
         width: 59%;
