@@ -107,7 +107,7 @@ sareeNav.addEventListener('mouseleave', () => {
 //right and left event listner for second listing crousel
 var images = [1, 2, 3, 4, 5, 6, 7, 8];
 var secondList = document.querySelector('.second-list');
-var length = secondList.clientWidth;
+var length = secondList.clientWidth-20;
 var listingItem = '';
 for (var i = 1; i <= images.length; i++) {
     listingItem += `<div class="item">
@@ -124,16 +124,32 @@ for (var i = 1; i <= images.length; i++) {
                 </div> */
 listing.innerHTML = listingItem;
 listing.style.width = `${((images.length) / 4) * 100}%`;
+if(window.innerWidth<=430){
+    listing.style.width = `${((images.length) / 2) * 100}%`;
+}
+var click=1;
 right.addEventListener('click', () => {
-    console.log(length);
-    listing.style.transform = `translateX(-${length + 2}px)`;
+   
     listing.style.transition = 'all 1s ease-in-out';
-    console.log(listing.clientWidth);
+    if(window.innerWidth<=430){
+        listing.style.transform = `translateX(-${(length)*click}px)`;
+        click+=1;
+        if(click>=(images.length) / 2) {
+            click=1;
+        }
+    }
+    else{
+        listing.style.transform = `translateX(-${length + 2}px)`;
+    }
+   
 })
+
 left.addEventListener('click', () => {
     console.log(length);
-    listing.style.transform = `translateX(${0}px)`;
-    listing.style.transition = 'all 1s ease-in-out';
+        listing.style.transform = `translateX(${0}px)`;
+        listing.style.transition = 'all 1s ease-in-out';
+        click-=1;
+
 })
 
 //listing item hover 
@@ -190,13 +206,28 @@ for (var i = 1; i <= images.length; i++) {
 }
 fourthListing.innerHTML = fourthListingItem;
 fourthListing.style.width = `${((images.length) / 4) * 100}%`;
+if(window.innerWidth<=430){
+    listing.style.width = `${((images.length) / 2) * 100}%`;
+}
+var click4=1;
+if(window.innerWidth<=430){
+    fourthListing.style.width = `${((images.length) / 2) * 100}%`;
+}
 fourthRight.addEventListener('click', () => {
     fourthListing.style.transform = `translateX(-${fourthLength}px)`;
     fourthListing.style.transition = 'all 1s ease-in-out';
+    if(window.innerWidth<=430){
+        fourthListing.style.transform = `translateX(-${(fourthLength)*click4}px)`;
+        click4+=1;
+        if(click4>=(images.length) / 2) {
+            click4=1;
+        }
+    }
 })
 fourthLeft.addEventListener('click', () => {
     fourthListing.style.transform = `translateX(${0}px)`;
     fourthListing.style.transition = 'all 1s ease-in-out';
+    
 })
 
 
