@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House of Vardha</title>
+    <title>Kr Creation</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
+    <link rel="icon" type="image" href="./images/main_logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,16 +17,28 @@
 
 <body>
     <div class="frontPage">
-        <div class="navbar">
+        <div class="navMob">
+
+            <div class="toggle">
+                <button id="openBtn" class="open nav" role="button">
+                    ☰
+                </button>
+
+                <button id="close" class="close nav" role="button">
+                    X
+                </button>
+            </div>
+        </div>
+        <div class="navbar navMob2">
             <div class="logo">
-                <img src="./images/main_logo_png.webp" alt="">
+                <img src="./images/main_logo.png" alt="logo home page">
             </div>
             <div class="nav-list">
-                <div class="nav-items saree" id="saree">Saree</div>
-                <div class="nav-items">Monsoon Sale</div>
-                <div class="nav-items">Feather Soft</div>
-                <div class="nav-items">Salwar Suit</div>
-                <div class="nav-items">Men's Kurta</div>
+                <div class="nav-items saree navItemMob" id="saree">Saree</div>
+                <div class="nav-items navItemMob">Monsoon Sale</div>
+                <div class="nav-items navItemMob">Feather Soft</div>
+                <div class="nav-items navItemMob">Salwar Suit</div>
+                <div class="nav-items navItemMob">Men's Kurta</div>
             </div>
             <div class="nav-icons">
                 <div>
@@ -123,7 +136,7 @@
             <div class="circle"></div>
         </div>
     </div>
-    <div class="second-list">
+    <div class="second-list" align="center">
         <p style="text-align: center;">ELEGANCE MEETS INTEGRITY</p>
         <div class="heading">
             <div>
@@ -179,7 +192,7 @@
             <img src="./images/loom.webp" alt="" class="loom">
         </div>
         <div class="discover">
-            <p>HOUSE OF VARDHA'S</p>
+            <p>Kr Creation</p>
             <h4>An Embodiment Of True Style</h4>
             <div class="sec-5-1p">
                 <p>Draped in a rich family legacy of textile owners and</p>
@@ -226,29 +239,36 @@
     <div class="seventhsec">
         <p>Why you'll love us</p>
         <div class="seventhListing">
-            <div class="seventhItem">
-                <img src="./images/seventh-listing/1.webp" alt="1">
-                <p>Free Shipping in India</p>
+            <div class="row">
+                <div class="seventhItem">
+                    <img src="./images/seventh-listing/1.webp" alt="1">
+                    <p>Free Shipping in India</p>
+                </div>
+                <div class="seventhItem">
+                    <img src="./images/seventh-listing/2.webp" alt="2">
+                    <p>Tailored for you</p>
+                </div>
             </div>
-            <div class="seventhItem">
-                <img src="./images/seventh-listing/2.webp" alt="2">
-                <p>Tailored for you</p>
+            <div class="row">
+                <div class="seventhItem">
+                    <img src="./images/seventh-listing/3.webp" alt="3">
+                    <p>Bespoke collection</p>
+                </div>
+                <div class="seventhItem">
+                    <img src="./images/seventh-listing/4.webp" alt="4">
+                    <p>Stamp of authenticity</p>
+                </div>
             </div>
-            <div class="seventhItem">
-                <img src="./images/seventh-listing/3.webp" alt="3">
-                <p>Bespoke collection</p>
+            <div class="row">
+                <div class="seventhItem lastItem">
+                    <img src="./images/seventh-listing/5.webp" alt="5">
+                    <p>35+ years of sarees</p>
+                </div>
             </div>
-            <div class="seventhItem">
-                <img src="./images/seventh-listing/4.webp" alt="4">
-                <p>Stamp of authenticity</p>
-            </div>
-            <div class="seventhItem">
-                <img src="./images/seventh-listing/5.webp" alt="5">
-                <p>35+ years of sarees</p>
-            </div>
+            
         </div>
     </div>
-
+    <!-- 
     <div class="testimonial">
         <div class="testimonial-head">
             <p>They have an eye for the finest</p>
@@ -267,7 +287,7 @@
             <div class="testNavItem"></div>
             <div class="testNavItem"></div>
         </div>
-    </div>
+    </div> -->
 
 
     <div class="footer">
@@ -280,40 +300,51 @@
                     <button>Subscribe</button>
                 </form>
             </div>
+            <hr>
             <div class="footer-lower">
                 <div class="footer-col">
                     <p>SHOP</p>
-                    <p>Saree</p>
-                    <p>Salwar Suit</p>
-                    <p>Men's Kurta</p>
+                    <div class="shop">
+                        <p>Saree</p>
+                        <p>Salwar Suit</p>
+                        <p>Men's Kurta</p>
+                    </div>
                 </div>
                 <div class="footer-col">
-                    <p>INFORMATION</p>
-                    <p>Our Story</p>
-                    <p>Contact us</p>
-                    <p>Our Testimonials</p>
+                    <div class="info">
+                        <p>INFORMATION</p>
+                        <p>Our Story</p>
+                        <p>Contact us</p>
+                        <p>Our Testimonials</p>
+                    </div>
                 </div>
                 <div class="footer-col">
+
                     <p>HELP</p>
-                    <p>Privacy Policy</p>
-                    <p>Shipping & Delivery Policy</p>
-                    <p>Terms & Conditions</p>
-                    <p>Cancellation , Refunds & Exchange Policy</p>
+                    <div class="help">
+                        <p>Privacy Policy</p>
+                        <p>Shipping & Delivery Policy</p>
+                        <p>Terms & Conditions</p>
+                        <p>Cancellation , Refunds & Exchange Policy</p>
+                    </div>
                 </div>
                 <div class="footer-col customer-care">
                     <p>CUSTOMER CARE</p>
-                    <p>+91-8866015444</p>
-                    <p>(Mon-Sat 10 AM to 6 PM)</p>
+                    <div class="care">
+                        <p>+91-8866015444</p>
+                        <p>(Mon-Sat 10 AM to 6 PM)</p>
+                    </div>
 
                 </div>
                 <div class="footer-col">
                     <p>CONTACT</p>
-                    <p>65,Jay Industrial Estate-1,
-                        <br>Anjana Farm,<br>
-                        Surat 395002
-                    </p>
-                    <p>Salwar Suit</p>
-                    <p>Men's Kurta</p>
+                    <div class="contact">
+                        <p>65,Jay Industrial Estate-1,
+                            <br>Anjana Farm,<br> Surat 395002
+                        </p>
+                        <p>Salwar Suit</p>
+                        <p>Men's Kurta</p>
+                    </div>
                 </div>
                 <div class=" footer-col footer-logo">
                     <img src="./images/main_logo_png.webp" alt="">
