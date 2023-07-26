@@ -1,24 +1,81 @@
 @media (max-width: 480px) {
+    .navMob {
+        display: flex;
+    }
+    .navMob2 {
+        padding-top: 100px;
+        background-color: white;
+        width: 90%;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+    .nav-list {
+        display: none;
+        color: black;
+        padding: 20px;
+    }
+    .navItemMob {
+        padding-bottom: 40px;
+    }
     .seventhListing {
         display: block;
     }
+    .seventhItem{
+        margin-left: 0px;
+    }
+    .lastItem{
+        padding-left: 30%;
+        padding-right: 30%;
+        padding-top: 40px;
+    }
     .navbar {
+        display: none;
+    }
+    .nav-icons {
         display: none;
     }
     .saree-nav {
         display: none;
     }
+    .second-list {
+        width: 90%;
+        padding: 10px;
+        padding-top: 80px;
+        margin: auto;
+    }
+    .second-list .left {
+        margin-top: 80px;
+        margin-left: -25px;
+    }
+    .second-list .right {
+        margin-left: 80%;
+        margin-top: -70px;
+    }
+    .second-list .listing {
+        width: 200%;
+    }
     .second-list .listing .item {
-        width: 100%;
-        padding: 20px;
+        width: 50%;
+        margin: 0;
+        padding: 10px;
         padding-bottom: 0;
+    }
+    .second-list .listing .item img {
+        width: 100%;
+        /* height: auto; */
     }
     .third-list {
         width: 100%;
         display: block;
+        margin-left: 0;
     }
     .third-list .third-list-item {
-        width: 90%;
+        width: 100%;
+        /* margin: 0; */
+    }
+    .discriptShop {
+        width: 50%;
+        height: 25%;
     }
     .fourth-list {
         width: 90%;
@@ -39,11 +96,72 @@
     }
     .sixthListing {
         margin: 0;
-        display: block;
+        display: flex;
     }
     .sixthListing .sixthItem {
         width: 100%;
         margin: 0;
-        padding: 10px;
+        padding: 0;
+    }
+    .testListing {
+        width: 250%;
+        /* display: block; */
+    }
+    .testItem {
+        width: 21%;
+        padding: 17px;
+    }
+    .footer {
+        height: 100vh;
+    }
+    .footer-padding {
+        width: 100%;
+    }
+    .footer-upper form {
+        display: flex;
+    }
+    .footer-upper {
+        padding: 20px;
+    }
+    hr {
+        background-color: #dba61f;
+        display: block;
+    }
+    .footer-lower {
+        padding: 20px;
+        display: block;
+    }
+    .footer-lower .footer-col {
+        padding: 0;
+    }
+    .shop {
+        display: none;
+    }
+    .info {
+        display: none;
+    }
+    .help {
+        display: none;
+    }
+    .care {
+        display: none;
+    }
+    .contact {
+        display: none;
+    }
+    .footer-logo {
+        width: 100%;
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    /* .footer-logo {
+        display: flex;
+    } */
+    .footer-logo .social-icon {
+        display: flex;
+        justify-content: right;
+        /* align-items: right; */
+        width: 100%;
     }
 }
