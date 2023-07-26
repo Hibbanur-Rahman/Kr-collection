@@ -158,12 +158,14 @@ console.log(SecItem);
 SecItem.forEach((element) => {
     element.addEventListener('mouseover', () => {
         var x = (element.childNodes[1].src);
-        var y = x.substring(0, 44) + 'b' + x.substring(45,);
+        var index=x.indexOf('.webp');
+        var y = x.substring(0, index) + 'b' + x.substring(index+1,);
         element.childNodes[1].src = y;
     })
     element.addEventListener('mouseleave', () => {
         var x = (element.childNodes[1].src);
-        var y = x.substring(0, 44) + 'a' + x.substring(45,);
+         var index=x.indexOf('.webp');
+        var y = x.substring(0, index) + 'a' + x.substring(index+1,);
         element.childNodes[1].src = y;
     })
 })
